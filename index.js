@@ -10,7 +10,11 @@ const T = new Twit({
 	access_token_secret: process.env.TOKENSECRET
 });
 
-const imageB64 = fs.readFileSync(__dirname + '\\sangria.png', { encoding: 'base64' })
+let localPath = '/sangria.png'
+// Path for Windows
+//let localPath = '\\sangria.png'
+
+const imageB64 = fs.readFileSync(__dirname + localPath, { encoding: 'base64' })
 
 T.post('media/upload', { media_data: imageB64 }, function (err, data, response) {
 	let mediaIdStr = data.media_id_string
