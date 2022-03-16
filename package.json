@@ -1,0 +1,23 @@
+{
+  "name": "sangria-guy-bot",
+  "version": "1.0.0",
+  "description": "A twitter bot that posts a picture of the sangria guy on thursdays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "funny",
+    "sangria",
+    "guy",
+    "stupid"
+  ],
+  "author": "spaton",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "twit": "^2.2.11"
+  }
+}
